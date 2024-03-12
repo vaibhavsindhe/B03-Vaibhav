@@ -6,7 +6,6 @@ let data=[{name:"Jordy Broke",Email:"jbroke2@gmail.com",img:"profile1.jpg",type:
           {name:"Office",Email:"Sir,Mam",img:"profile6.jpg",type:"group"},
           {name:"Friends",Email:"",img:"profile7.jpg",type:"group"}
         ];
-// console.log(data);
 
 
 
@@ -61,8 +60,6 @@ function creatChatBox(chatData,div){
     subDiv.classList.add("subDiv");
     subDiv.appendChild(profile);
     subDiv.appendChild(infodiv);
-    // chat.appendChild(profile);
-    // chat.appendChild(infodiv);
     chat.appendChild(subDiv);
     chat.appendChild(btn);
     div.appendChild(chat);
@@ -73,7 +70,6 @@ let selectedDiv=contactsDiv;
 let selectedNav=document.querySelector(".initial");
 selectedNav.classList.add("selectedNav");
 let switchBtn=document.querySelectorAll(".switch");
-// console.log(switchBtn);
 switchBtn.forEach((item)=>{
     item.addEventListener("click",()=>{
         if(item.innerText=="Groups"){
